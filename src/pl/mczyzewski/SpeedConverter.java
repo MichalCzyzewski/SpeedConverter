@@ -8,8 +8,8 @@ public class SpeedConverter {
             return -1;
         }
         else {
-            double milesPerHour =  kilometersPerHour / 1.609;
-            return (long)Math.round(milesPerHour);
+
+            return (long)Math.round(kilometersPerHour/1.609);
         }
     }
 
