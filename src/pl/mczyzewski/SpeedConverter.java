@@ -13,9 +13,14 @@ public class SpeedConverter {
         }
     }
 
-    public static void printConvesion (double kilometersPerHour)
+    public static void printConversion (double kilometersPerHour)
     {
-        System.out.println(kilometersPerHour + "km/h = " + toMilesPerHour(kilometersPerHour) + "mi/h");
+        if(kilometersPerHour <0)
+        {
+            System.out.println("Invalid Value");
+        }else {
+            System.out.println(kilometersPerHour + " km/h = " + toMilesPerHour(kilometersPerHour) + " mi/h");
+        }
     }
 
 }
